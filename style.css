@@ -1,0 +1,55 @@
+/* all */
+
+/* body */
+body{
+	background: linear-gradient(-45deg, rgb(29, 131, 72), rgb(46, 204, 113), rgb(130, 224, 170));
+	
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	
+	margin: 0.1px;
+
+	overflow:hidden;
+}
+/* cadrillage */
+.cadrillage{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+}
+.a{
+	width: 189.5px;
+	height: 100%;
+}
+.b{
+	width: 189.5px;
+	height: 100%;
+
+	margin-left: 5px;
+}
+.box{
+    background-color: black;
+
+    width: 189.5px;
+    height: 189.5px;
+
+    margin: 5px;
+}
+.box:hover{
+	transform:scale(1.03);
+	transition: 0.3s;
+}
+
+
+/* var and  keyframes */
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
